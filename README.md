@@ -386,6 +386,9 @@ De los cancelados:
 
 3 de cada 4 compras se realizan con tarjeta de crédito. A mayor cantidad de cuotas, más caras son las compras.
 
+---
+## Evolución Temporal y Comparativa Interanual
+
 <img width="1338" height="750" alt="image" src="https://github.com/user-attachments/assets/178cd4ae-c604-4895-a581-6ae533bf761b" />
 
 
@@ -402,6 +405,10 @@ Olist tuvo un gran crecimiento desde enero de 2017, con 130k a 1.11M en enero de
 
 
 Como recomendación, es urgente recalibrar el algoritmo de estimación de tiempo de entrega para estas regiones remotas, ya que prometer fechas irreales afecta a las valoraciones del producto.
+
+---
+
+## Rendimiento de Vendedores, Calificacion y Atributos de Producto
 
 <img width="1337" height="749" alt="image" src="https://github.com/user-attachments/assets/e630d860-f383-4263-9dc9-44be9c0b7e6e" />
 
@@ -439,8 +446,8 @@ El mapa muestra las ventas en orden cronológico, uniendo un arco entre el vende
 
 <img src="Visualizaciones/Mapas/Ventas_en_el_Tiempo.gif" style="width: 70%; height: auto;"/>
 
-
 [![Ver Mapa](https://img.shields.io/badge/Abrir_Mapa_Interactivo-Kepler.gl-blue?style=for-the-badge)](https://mauricio-dipablo.github.io/Olist_Project-SQL-Power-Bi-kepler.gl/Visualizaciones/Mapas/Mapas_Webs/Ventas_en_el_Tiempo.html)
+
 ---
 
 <a id="dispersion-del-valor-de-compras"></a>
@@ -449,8 +456,9 @@ El mapa muestra las ventas en orden cronológico, uniendo un arco entre el vende
 
 La altura de las barras representa el volumen en Reales (R$). Aquí validamos que, aunque hay clientes por todo el país, el verdadero flujo de dinero ocurre en un radio pequeño del sureste.
 
-<img src="Visualizaciones/Mapas/Valor_Compras.png" style="width: 50%; height: auto;"/>
+<img src="Visualizaciones/Mapas/Valor_Compras.png" width="50%" />
 
+[![Ver Mapa](https://img.shields.io/badge/Abrir_Mapa_Interactivo-Kepler.gl-blue?style=for-the-badge)](https://mauricio-dipablo.github.io/Olist_Project-SQL-Power-Bi-kepler.gl/Visualizaciones/Mapas/Mapas_Webs/Valor_Compras.html)
 
 ---
 
@@ -460,8 +468,10 @@ La altura de las barras representa el volumen en Reales (R$). Aquí validamos qu
 
 Este mapa muestra la saturación del mercado en la costa de Brasil. Las zonas más brillantes (São Paulo y Río de Janeiro) son probablemente el centro de todos los e-commerce de Brasil.
 
-<img src="Visualizaciones/Mapas/Mapa_Calor.png"/>
+<img src="Visualizaciones/Mapas/Mapa_Calor.png" width="100%" />
 
+[![Ver Mapa Clientes](https://img.shields.io/badge/Abrir_Mapa_Clientes-Kepler.gl-blue?style=for-the-badge)](https://mauricio-dipablo.github.io/Olist_Project-SQL-Power-Bi-kepler.gl/Visualizaciones/Mapas/Mapas_Webs/Customers.html)
+[![Ver Mapa Calor](https://img.shields.io/badge/Abrir_Mapa_Calor-Kepler.gl-orange?style=for-the-badge)](https://mauricio-dipablo.github.io/Olist_Project-SQL-Power-Bi-kepler.gl/Visualizaciones/Mapas/Mapas_Webs/Mapa_Calor.html)
 
 ---
 
