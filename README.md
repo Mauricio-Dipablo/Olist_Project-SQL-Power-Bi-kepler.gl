@@ -439,6 +439,8 @@ El mapa muestra las ventas en orden cronológico, uniendo un arco entre el vende
 
 <img src="Visualizaciones/Mapas/Ventas_en_el_Tiempo.gif" style="width: 70%; height: auto;"/>
 
+
+[![Ver Mapa](https://img.shields.io/badge/Abrir_Mapa_Interactivo-Kepler.gl-blue?style=for-the-badge)](https://mauricio-dipablo.github.io/Olist_Project-SQL-Power-Bi-kepler.gl/Visualizaciones/Mapas/Mapas_Webs/Ventas_en_el_Tiempo.html)
 ---
 
 <a id="dispersion-del-valor-de-compras"></a>
