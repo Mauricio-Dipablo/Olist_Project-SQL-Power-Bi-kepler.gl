@@ -1,4 +1,4 @@
-<img src="https://github.com/user-attachments/assets/bc415041-7072-450d-b218-b5d6cbfffb76" width="100%" />
+<img src="Visualizaciones/Mapas/Top.gif" width="100%" />
 
 ## Índice
 
@@ -420,13 +420,13 @@ Diversos mapas para visualizar compradores, vendedores y envíos en el tiempo.
 
 Puedes acceder a los links de cada mapa para ir al mapa web.
 
----
+
 
 <a id="nombres-de-zonas-con-gran-volumen-de-compras"></a>
 
 ## Nombres de zonas con gran volumen de compras
 
-<img src="https://github.com/user-attachments/assets/fb1d9bd1-7267-4460-826a-81e5339e6bdf" style="width: 50%; height: auto;"/>
+<img src="Visualizaciones/Mapas/Nombres_Ciudades.png" style="width: 50%; height: auto;"/>
 
 
 ---
@@ -437,8 +437,7 @@ Puedes acceder a los links de cada mapa para ir al mapa web.
 
 El mapa muestra las ventas en orden cronológico, uniendo un arco entre el vendedor y el cliente. Se observa que, al inicio, las ventas empezaron en el Sur y, con el tiempo, se expandieron por todo el país.
 
-<img src="https://github.com/user-attachments/assets/52be2554-6e76-454b-8ce4-e765b17b27e6" style="width: 70%; height: auto;"/>
-
+<img src="Visualizaciones/Mapas/Ventas_en_el_Tiempo.gif" style="width: 70%; height: auto;"/>
 
 ---
 
@@ -448,7 +447,7 @@ El mapa muestra las ventas en orden cronológico, uniendo un arco entre el vende
 
 La altura de las barras representa el volumen en Reales (R$). Aquí validamos que, aunque hay clientes por todo el país, el verdadero flujo de dinero ocurre en un radio pequeño del sureste.
 
-<img src="https://github.com/user-attachments/assets/e01fc3fa-8dea-4269-b0ce-03e9062d94af" style="width: 50%; height: auto;"/>
+<img src="Visualizaciones/Mapas/Valor_Compras.png" style="width: 50%; height: auto;"/>
 
 
 ---
@@ -459,7 +458,7 @@ La altura de las barras representa el volumen en Reales (R$). Aquí validamos qu
 
 Este mapa muestra la saturación del mercado en la costa de Brasil. Las zonas más brillantes (São Paulo y Río de Janeiro) son probablemente el centro de todos los e-commerce de Brasil.
 
-<img src="https://github.com/user-attachments/assets/6bdb8870-cf73-41b6-8dfc-decd59d5943d" />
+<img src="Visualizaciones/Mapas/Mapa_Calor.png"/>
 
 
 ---
