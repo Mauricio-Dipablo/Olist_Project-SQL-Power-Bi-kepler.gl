@@ -1,4 +1,4 @@
-<img src="Visualizaciones/Mapas/Top.gif" width="100%" />
+<img src="./Visualizaciones/Mapas/Top.gif" width="100%" />
 
 ## Índice
 
@@ -263,7 +263,7 @@ VALUES
     ('pc_gamer','pc_gamer');
 ```
 
-<img width="846" height="673" alt="image" src="https://github.com/user-attachments/assets/c4858c5e-c289-41a6-bf3a-f63aa25ed8c4" />
+<img src="./Visualizaciones/Graficos/Diagrama_olist.png" width="100%" />
 
 
 ---
@@ -375,7 +375,7 @@ ORDER BY total_pedidos DESC;
 
 ## Métricas Generales
 
-<img width="1343" height="754" alt="image" src="https://github.com/user-attachments/assets/4563146f-98f7-4442-8b59-8256eea9e303" />
+<img src="./Visualizaciones/Graficos/Métricas_Generales.png" width="100%" />
 
 
 **Concentración de mercado:** El estado de São Paulo domina con más del 37% del GMV. Al cruzar esto con la categoría top (Salud y Belleza), se sugiere priorizar el almacenamiento de los productos top en los centros de distribución de SP para asegurar tiempos de entrega cortos.
@@ -386,7 +386,7 @@ ORDER BY total_pedidos DESC;
 
 ## Comportamiento y Métodos de Pago
 
-<img width="1339" height="752" alt="image" src="https://github.com/user-attachments/assets/fa4d3400-ac74-4df6-8548-acd03e6d95fa" />
+<img src="./Visualizaciones/Graficos/Comportamiento_y_Métodos_de_Pago.png" width="100%" />
 
 
 **Desplome en fines de semana:** El volumen de pedidos cae un 50% los domingos frente a los picos del martes. Se recomienda al equipo comercial evaluar incentivos de fin de semana.
@@ -396,7 +396,7 @@ ORDER BY total_pedidos DESC;
 ---
 ## Evolución Temporal y Comparativa Interanual
 
-<img width="1338" height="750" alt="image" src="https://github.com/user-attachments/assets/178cd4ae-c604-4895-a581-6ae533bf761b" />
+<img src="./Visualizaciones/Graficos/Evolución_Temporal_y_Comparativa_Internaul.png" width="100%" />
 
 
 Olist tuvo un gran crecimiento desde enero de 2017, con 130k a 1.11M en enero de 2018 (840%). En 2018 no tuvo un gran crecimiento, pero mantuvo un valor en compras estables mes a mes.
@@ -407,8 +407,8 @@ Olist tuvo un gran crecimiento desde enero de 2017, con 130k a 1.11M en enero de
 
 ## Costo de envíos y retrasos
 
-<img width="1339" height="751" alt="image" src="https://github.com/user-attachments/assets/8a730631-ed6a-4588-820d-1553d7850f7b" />
-<img width="1334" height="310" alt="image" src="https://github.com/user-attachments/assets/db01eedb-c279-4cc7-a490-17457239694a" />
+<img src="./Visualizaciones/Graficos/Costo_de_envíos_y_retrasos.png" width="100%" />
+<img src="./Visualizaciones/Graficos/Costo_de_envíos_y_retrasos2.png" width="100%" />
 
 Los estados del norte sufren en promedio mas días de retraso debido a la gran distancia de la capital, donde se encuentran la mayoría de los vendedores.
 
@@ -418,7 +418,7 @@ Recomendación: Recalibrar el algoritmo de estimación de tiempo de entrega para
 
 ## Rendimiento de Vendedores, Calificacion y Atributos de Producto
 
-<img width="1337" height="749" alt="image" src="https://github.com/user-attachments/assets/e630d860-f383-4263-9dc9-44be9c0b7e6e" />
+<img src="./Visualizaciones/Graficos/Rendimiento_de_Vendedores,_Calificación_y_Atributos_de_Producto.png" width="100%" />
 
 
 Se observa un claro incremento entre productos vendidos y el largo del nombre de los productos, siendo en promedio un nombre de **60 caracteres** el que más ganancias genera.
@@ -476,7 +476,7 @@ La altura de las barras representa el volumen en Reales (R$). Aquí validamos qu
 
 Este mapa muestra la saturación del mercado en la costa de Brasil. Las zonas más brillantes (São Paulo y Río de Janeiro) son probablemente el centro de todos los e-commerce de Brasil.
 
-<img src="Visualizaciones/Mapas/Mapa_Calor.png" width="100%" />
+<img src="./Visualizaciones/Mapas/Mapa_Calor.png" width="100%" />
 
 [![Ver Mapa Clientes](https://img.shields.io/badge/Abrir_Mapa_Clientes-Kepler.gl-blue?style=for-the-badge)](https://mauricio-dipablo.github.io/Olist_Project-SQL-Power-Bi-kepler.gl/Visualizaciones/Mapas/Mapas_Webs/Customers.html)
 [![Ver Mapa Calor](https://img.shields.io/badge/Abrir_Mapa_Calor-Kepler.gl-orange?style=for-the-badge)](https://mauricio-dipablo.github.io/Olist_Project-SQL-Power-Bi-kepler.gl/Visualizaciones/Mapas/Mapas_Webs/Mapa_Calor.html)
