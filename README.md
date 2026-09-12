@@ -24,7 +24,7 @@
 
 # Contexto
 
-Este conjunto de datos fue proporcionado por Olist. El conjunto de datos contiene información de 100 000 pedidos realizados entre 2016 y 2018 en diversos marketplaces de Brasil. Se trata de datos comerciales reales que han sido anonimizados.
+Este conjunto de datos fue proporcionado por Olist. Contiene información de 100 000 pedidos realizados entre 2016 y 2018 en diversos marketplaces de Brasil. Se trata de datos comerciales reales que han sido anonimizados.
 
 Tras la compra de un producto en Olist Store, el vendedor recibe una notificación para procesar el pedido. Una vez que el cliente recibe el producto, o cuando se acerca la fecha de entrega estimada, recibe por correo electrónico una encuesta de satisfacción donde puede expresar su opinión sobre la compra y añadir algunos comentarios.
 
@@ -251,7 +251,7 @@ ALTER TABLE products_dataset ADD CONSTRAINT
 FOREIGN KEY (product_category_name) REFERENCES product_category_name_translation(product_category_name);
 ```
 
-**Error 1452:** la tabla de productos contenía categorías huérfanas (`pc_gamer` y `portateis_cozinha...`) que no existían en `product_category_name_translation`. Se corrigió insertando estas categorías faltantes y, adicionalmente, se homogeneizaron los registros `NULL` bajo la etiqueta `unknown` para evitar campos vacíos.
+**Error 1452:** la tabla de productos contenía categorías huérfanas (`pc_gamer` y `portable_kitchen_food_preparers`) que no existían en `product_category_name_translation`. Se corrigió insertando estas categorías faltantes y, adicionalmente, se homogeneizaron los registros `NULL` bajo la etiqueta `unknown` para evitar campos vacíos.
 
 ```sql
 INSERT INTO product_category_name_translation (
@@ -275,8 +275,6 @@ VALUES
 `geolocation_dataset` es un mapa de Brasil. Debería tener 1 000 163 códigos postales distintos, pero como los últimos 3 dígitos fueron anonimizados, por ejemplo:
 
 `Antes = 94856-360 | Ahora = 94856`
-
-Así que ahora el mapa tiene 19 015 códigos postales únicos.
 
 Por eso no relacionamos `geolocation_dataset`.`geolocation_zip_code_prefix` con `customers_dataset`.`customer_zip_code_prefix`. Habría muchas latitudes y longitudes para un único cliente.
 
@@ -329,7 +327,16 @@ JOIN geolocation_clean AS geo_cus
 
 # Datos faltantes
 
-<img width="492" height="168" alt="image" src="https://github.com/user-attachments/assets/112ca8ca-8404-43de-95c3-16a2714308f7" />
+| order_status | total_pedidos | tienen_aprobacion | tienen_correo | tienen_entrega_cliente |
+| :--- | ---: | ---: | ---: | ---: |
+| delivered | 96478 | 96464 | 96476 | 96470 |
+| shipped | 1107 | 1107 | 1107 | 0 |
+| canceled | 625 | 484 | 75 | 6 |
+| unavailable | 609 | 609 | 0 | 0 |
+| invoiced | 314 | 314 | 0 | 0 |
+| processing | 301 | 301 | 0 | 0 |
+| created | 5 | 0 | 0 | 0 |
+| approved | 2 | 2 | 0 | 0 |
 
 
 ```sql
@@ -344,17 +351,17 @@ GROUP BY order_status
 ORDER BY total_pedidos DESC;
 ```
 
-8 marcados como entregados no tienen fecha de entrega.
+* 8 marcados como entregados no tienen fecha de entrega.
 
-14 entregados no tenían aprobación.
+* 14 entregados no tenían aprobación.
 
-2 entregados no aparecen como recibidos por el transportista.
+* 2 entregados no aparecen como recibidos por el transportista.
 
-1107 fueron enviados, pero no tienen fecha de entrega.
+* 1107 fueron enviados, pero no tienen fecha de entrega.
 
-De los cancelados:
+### De los cancelados(625):
 
-* 484 de 625 fueron aprobados y 75 fueron recibidos por el transportista.
+* 484 fueron aprobados y 75 fueron recibidos por el transportista.
 * 6 se cancelaron luego de ser entregados.
 * 314 aprobaron el pago, pero quedaron procesando.
 
@@ -392,7 +399,7 @@ De los cancelados:
 <img width="1338" height="750" alt="image" src="https://github.com/user-attachments/assets/178cd4ae-c604-4895-a581-6ae533bf761b" />
 
 
-Olist tuvo un gran crecimiento desde enero de 2017, con 130k a 1.11M en enero de 2018 (840%). En 2018 no tuvo un gran crecimiento, pero mantuvo un valor en compras estable.
+Olist tuvo un gran crecimiento desde enero de 2017, con 130k a 1.11M en enero de 2018 (840%). En 2018 no tuvo un gran crecimiento, pero mantuvo un valor en compras estables mes a mes.
 
 ---
 
@@ -403,8 +410,9 @@ Olist tuvo un gran crecimiento desde enero de 2017, con 130k a 1.11M en enero de
 <img width="1339" height="751" alt="image" src="https://github.com/user-attachments/assets/8a730631-ed6a-4588-820d-1553d7850f7b" />
 <img width="1334" height="310" alt="image" src="https://github.com/user-attachments/assets/db01eedb-c279-4cc7-a490-17457239694a" />
 
+Los estados del norte sufren en promedio mas días de retraso debido a la gran distancia de la capital, donde se encuentran la mayoría de los vendedores.
 
-Como recomendación, es urgente recalibrar el algoritmo de estimación de tiempo de entrega para estas regiones remotas, ya que prometer fechas irreales afecta a las valoraciones del producto.
+Recomendación: Recalibrar el algoritmo de estimación de tiempo de entrega para estas regiones remotas, ya que prometer fechas irreales afecta a las valoraciones del producto.
 
 ---
 
@@ -425,7 +433,7 @@ Las descripciones que más venden suelen tener un tamaño entre 300 y 700 caract
 
 Diversos mapas para visualizar compradores, vendedores y envíos en el tiempo.
 
-Puedes acceder a los links de cada mapa para ir al mapa web.
+Puedes acceder a los enlaces de cada mapa para ir al mapa web.
 
 
 
@@ -454,7 +462,7 @@ El mapa muestra las ventas en orden cronológico, uniendo un arco entre el vende
 
 ## Dispersión del Valor de Compras
 
-La altura de las barras representa el volumen en Reales (R$). Aquí validamos que, aunque hay clientes por todo el país, el verdadero flujo de dinero ocurre en un radio pequeño del sureste.
+La altura de las barras representa el volumen en Reales (R$). Aquí validamos que, aunque hay clientes por todo el país, el verdadero flujo de dinero ocurre en un radio pequeño del sur.
 
 <img src="Visualizaciones/Mapas/Valor_Compras.png" width="50%" />
 
@@ -508,7 +516,7 @@ Porque en Brasil hay ciudades con el mismo nombre. Por ejemplo:
 
 Son 2 ciudades con el mismo nombre y las diferenciamos con el código postal. Tendría sentido guardar solo el código postal si queremos reducir espacio.
 
-Pero el problema llega al repartir:
+Pero el problema llega al entregar el pedido:
 
 La ley exige que la etiqueta impresa tenga explícitamente:
 
