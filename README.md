@@ -1,21 +1,21 @@
-<img src="./Visualizaciones/Mapas/Top.gif" width="100%" />
+<img src="./Visualizaciones/Mapas/Top.webp" width="100%" />
 
 ## Índice
 
 * [Contexto](#contexto)
-* [Recursos del Proyecto](#recursos-del-proyecto)
-* [La Arquitectura de Datos](#la-arquitectura-de-datos)
-* [La optimización de la tabla de Geoposición (-98% de tamaño)](#la-optimizacion-de-la-tabla-de-geoposicion--98-de-tamano)
-* [Datos faltantes](#datos-faltantes)
+	* [Recursos del Proyecto](#recursos-del-proyecto)
+	* [La Arquitectura de Datos](#la-arquitectura-de-datos)
+	* [La optimización de la tabla de Geoposición (-98% de tamaño)](#la-optimizacion-de-la-tabla-de-geoposicion--98-de-tamano)
+	* [Datos faltantes](#datos-faltantes)
 * [Hallazgos y Análisis](#hallazgos-y-analisis)
-* [Métricas Generales](#metricas-generales)
-* [Comportamiento y Métodos de Pago](#comportamiento-y-metodos-de-pago)
-* [Costo de envíos y retrasos](#costo-de-envios-y-retrasos)
+	* [Métricas Generales](#metricas-generales)
+	* [Comportamiento y Métodos de Pago](#comportamiento-y-metodos-de-pago)
+	* [Costo de envíos y retrasos](#costo-de-envios-y-retrasos)
 * [Análisis Geoespacial](#analisis-geoespacial)
-* [Nombres de zonas con gran volumen de compras](#nombres-de-zonas-con-gran-volumen-de-compras)
-* [Ventas en el tiempo](#ventas-en-el-tiempo)
-* [Dispersión del Valor de Compras](#dispersion-del-valor-de-compras)
-* [Densidad de Clientes (Mapa de Calor)](#densidad-de-clientes-mapa-de-calor)
+	* [Nombres de zonas con gran volumen de compras](#nombres-de-zonas-con-gran-volumen-de-compras)
+	* [Ventas en el tiempo](#ventas-en-el-tiempo)
+	* [Dispersión del Valor de Compras](#dispersion-del-valor-de-compras)
+	* [Densidad de Clientes (Mapa de Calor)](#densidad-de-clientes-mapa-de-calor)
 * [Diccionario](#diccionario)
 
 ---
@@ -263,7 +263,7 @@ VALUES
     ('pc_gamer','pc_gamer');
 ```
 
-<img src="./Visualizaciones/Graficos/Diagrama_olist.png" width="100%" />
+<img src="./Visualizaciones/Graficos/Diagrama_olist.webp" width="100%" />
 
 
 ---
@@ -375,7 +375,7 @@ ORDER BY total_pedidos DESC;
 
 ## Métricas Generales
 
-<img src="./Visualizaciones/Graficos/Métricas_Generales.png" width="100%" />
+<img src="./Visualizaciones/Graficos/Métricas_Generales.webp" width="100%" />
 
 
 **Concentración de mercado:** El estado de São Paulo domina con más del 37% del GMV. Al cruzar esto con la categoría top (Salud y Belleza), se sugiere priorizar el almacenamiento de los productos top en los centros de distribución de SP para asegurar tiempos de entrega cortos.
@@ -386,7 +386,7 @@ ORDER BY total_pedidos DESC;
 
 ## Comportamiento y Métodos de Pago
 
-<img src="./Visualizaciones/Graficos/Comportamiento_y_Métodos_de_Pago.png" width="100%" />
+<img src="./Visualizaciones/Graficos/Comportamiento_y_Métodos_de_Pago.webp" width="100%" />
 
 
 **Desplome en fines de semana:** El volumen de pedidos cae un 50% los domingos frente a los picos del martes. Se recomienda al equipo comercial evaluar incentivos de fin de semana.
@@ -396,7 +396,7 @@ ORDER BY total_pedidos DESC;
 ---
 ## Evolución Temporal y Comparativa Interanual
 
-<img src="./Visualizaciones/Graficos/Evolución_Temporal_y_Comparativa_Internaul.png" width="100%" />
+<img src="./Visualizaciones/Graficos/Evolución_Temporal_y_Comparativa_Interanual.webp" width="100%" />
 
 
 Olist tuvo un gran crecimiento desde enero de 2017, con 130k a 1.11M en enero de 2018 (840%). En 2018 no tuvo un gran crecimiento, pero mantuvo un valor en compras estables mes a mes.
@@ -407,8 +407,8 @@ Olist tuvo un gran crecimiento desde enero de 2017, con 130k a 1.11M en enero de
 
 ## Costo de envíos y retrasos
 
-<img src="./Visualizaciones/Graficos/Costo_de_envíos_y_retrasos.png" width="100%" />
-<img src="./Visualizaciones/Graficos/Costo_de_envíos_y_retrasos2.png" width="100%" />
+<img src="./Visualizaciones/Graficos/Costo_de_envíos_y_retrasos.webp" width="100%" />
+<img src="./Visualizaciones/Graficos/Costo_de_envíos_y_retrasos2.webp" width="100%" />
 
 Los estados del norte sufren en promedio mas días de retraso debido a la gran distancia de la capital, donde se encuentran la mayoría de los vendedores.
 
@@ -418,7 +418,7 @@ Recomendación: Recalibrar el algoritmo de estimación de tiempo de entrega para
 
 ## Rendimiento de Vendedores, Calificacion y Atributos de Producto
 
-<img src="./Visualizaciones/Graficos/Rendimiento_de_Vendedores,_Calificación_y_Atributos_de_Producto.png" width="100%" />
+<img src="./Visualizaciones/Graficos/Rendimiento_de_Vendedores,_Calificacion_y_Atributos_de_Producto.webp" width="100%" />
 
 
 Se observa un claro incremento entre productos vendidos y el largo del nombre de los productos, siendo en promedio un nombre de **60 caracteres** el que más ganancias genera.
@@ -441,7 +441,7 @@ Puedes acceder a los enlaces de cada mapa para ir al mapa web.
 
 ## Nombres de zonas con gran volumen de compras
 
-<img src="Visualizaciones/Mapas/Nombres_Ciudades.png" style="width: 50%; height: auto;"/>
+<img src="Visualizaciones/Mapas/Nombres_Ciudades.webp" style="width: 50%; height: auto;"/>
 
 
 ---
@@ -452,7 +452,7 @@ Puedes acceder a los enlaces de cada mapa para ir al mapa web.
 
 El mapa muestra las ventas en orden cronológico, uniendo un arco entre el vendedor y el cliente. Se observa que, al inicio, las ventas empezaron en el Sur y, con el tiempo, se expandieron por todo el país.
 
-<img src="Visualizaciones/Mapas/Ventas_en_el_Tiempo.gif" style="width: 70%; height: auto;"/>
+<img src="Visualizaciones/Mapas/Ventas_en_el_Tiempo.webp" style="width: 70%; height: auto;"/>
 
 [![Ver Mapa](https://img.shields.io/badge/Abrir_Mapa_Interactivo-Kepler.gl-blue?style=for-the-badge)](https://mauricio-dipablo.github.io/Olist_Project-SQL-Power-Bi-kepler.gl/Visualizaciones/Mapas/Mapas_Webs/Ventas_en_el_Tiempo.html)
 
@@ -464,7 +464,7 @@ El mapa muestra las ventas en orden cronológico, uniendo un arco entre el vende
 
 La altura de las barras representa el volumen en Reales (R$). Aquí validamos que, aunque hay clientes por todo el país, el verdadero flujo de dinero ocurre en un radio pequeño del sur.
 
-<img src="Visualizaciones/Mapas/Valor_Compras.png" width="50%" />
+<img src="Visualizaciones/Mapas/Valor_Compras.webp" width="50%" />
 
 [![Ver Mapa](https://img.shields.io/badge/Abrir_Mapa_Interactivo-Kepler.gl-blue?style=for-the-badge)](https://mauricio-dipablo.github.io/Olist_Project-SQL-Power-Bi-kepler.gl/Visualizaciones/Mapas/Mapas_Webs/Valor_Compras.html)
 
@@ -476,7 +476,7 @@ La altura de las barras representa el volumen en Reales (R$). Aquí validamos qu
 
 Este mapa muestra la saturación del mercado en la costa de Brasil. Las zonas más brillantes (São Paulo y Río de Janeiro) son probablemente el centro de todos los e-commerce de Brasil.
 
-<img src="./Visualizaciones/Mapas/Mapa_Calor.png" width="100%" />
+<img src="./Visualizaciones/Mapas/Mapa_Calor.webp" width="100%" />
 
 [![Ver Mapa Clientes](https://img.shields.io/badge/Abrir_Mapa_Clientes-Kepler.gl-blue?style=for-the-badge)](https://mauricio-dipablo.github.io/Olist_Project-SQL-Power-Bi-kepler.gl/Visualizaciones/Mapas/Mapas_Webs/Customers.html)
 [![Ver Mapa Calor](https://img.shields.io/badge/Abrir_Mapa_Calor-Kepler.gl-orange?style=for-the-badge)](https://mauricio-dipablo.github.io/Olist_Project-SQL-Power-Bi-kepler.gl/Visualizaciones/Mapas/Mapas_Webs/Mapa_Calor.html)
